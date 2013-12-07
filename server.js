@@ -52,6 +52,10 @@ var api = require('./lib/controllers/api'),
 
 // Server Routes
 app.get('/api/awesomeThings', api.awesomeThings);
+app.get('/api/question', api.question);
+app.get('/api/random_question', api.random_question);
+app.get('/api/answers', api.answers);
+app.get('/api/nouns', api.nouns);
 
 // Angular Routes
 app.get('/partials/*', controllers.partials);

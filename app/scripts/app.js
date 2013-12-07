@@ -9,8 +9,20 @@ angular.module('brainJellyApp', [
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/main',
-        controller: 'MainCtrl'
+        templateUrl: 'partials/questions',
+        controller: 'TodaysQuestionCtrl'
+      })
+      .when('/question', {
+        templateUrl: 'partials/questions',
+        controller: 'TodaysQuestionCtrl'
+      })
+      .when('/random_question', {
+        templateUrl: 'partials/questions',
+        controller: 'RandomQuestionCtrl'
+      })
+      .when('/answers', {
+        templateUrl: 'partials/answers',
+        controller: 'AnswersCtrl'
       })
       .otherwise({
         redirectTo: '/'
