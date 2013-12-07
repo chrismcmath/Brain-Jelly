@@ -57,6 +57,8 @@ app.get('/api/random_question', api.random_question);
 app.get('/api/answers', api.answers);
 app.get('/api/nouns', api.nouns);
 
+app.post('/api/answer', api.post_answer);
+
 // Angular Routes
 app.get('/partials/*', controllers.partials);
 app.get('/*', controllers.index);

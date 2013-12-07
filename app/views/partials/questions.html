@@ -16,8 +16,11 @@
     </header>
     <div class="main">
         <h1>{{q[0].question}} <span class="keyword">{{nouns[0].noun}}</span> and <span class="keyword">{{nouns[1].noun}}</span>?
-<textarea placeholder="I would..." class="answer"></textarea>
-<button role="button">Send Answer<i class="large-icon icon-arrow-right"></i></button>
+<form name="answer" action="/api/answer" method="post">
+<textarea placeholder="I would..." name="answer" class="answer"></textarea>
+<input type="hidden" name="q_id" value={{q[0]._id}}></input>
+<button role="button" >Send Answer<i class="large-icon icon-arrow-right"></i></button>
+</form> 
     </div>
     <footer>
       <ul>
