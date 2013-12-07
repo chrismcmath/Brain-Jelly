@@ -54,7 +54,7 @@ var api = require('./lib/controllers/api'),
 app.get('/api/awesomeThings', api.awesomeThings);
 app.get('/api/question', api.question);
 app.get('/api/random_question', api.random_question);
-app.get('/api/answers', api.answers);
+app.get('/api/answers/:id', api.answers);
 app.get('/api/nouns', api.nouns);
 
 app.post('/api/answer', api.post_answer);

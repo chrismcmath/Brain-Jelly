@@ -20,7 +20,7 @@ angular.module('brainJellyApp', [
         templateUrl: 'partials/questions',
         controller: 'RandomQuestionCtrl'
       })
-      .when('/answers', {
+      .when('/answers/:id', {
         templateUrl: 'partials/answers',
         controller: 'AnswersCtrl'
       })
